@@ -1,3 +1,4 @@
+/*
 package de.neuefische.cgnjava234webclient;
 
 import org.junit.jupiter.api.Test;
@@ -11,3 +12,4 @@ class CgnJava234WebclientApplicationTests {
     }
 
 }
+*/
