@@ -89,7 +89,7 @@ class CharacterIntegrationTest {
                                     "episode": [
                                         "https://rickandmortyapi.com/api/episode/1",
                                         "https://rickandmortyapi.com/api/episode/2",
-                                        "https://rickandmortyapi.com/api/episode/3"          
+                                        "https://rickandmortyapi.com/api/episode/3"       
                                     ],
                                     "url": "https://rickandmortyapi.com/api/character/1",
                                     "created": "2017-11-04T18:48:46.250Z"
