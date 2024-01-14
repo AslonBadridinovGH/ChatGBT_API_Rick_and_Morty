@@ -4,7 +4,7 @@ import de.neuefische.cgnjava234webclient.characters.models.Character;
 import de.neuefische.cgnjava234webclient.characters.models.api.RickAndMortyOrigin;
 import de.neuefische.cgnjava234webclient.characters.repositorys.CharacterRepository;
 import de.neuefische.cgnjava234webclient.characters.services.CharacterService;
-import de.neuefische.cgnjava234webclient.characters.services.api.RickAndMortyAPIService;
+import de.neuefische.cgnjava234webclient.characters.api.RickAndMortyAPIService;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -18,6 +18,7 @@ class CharacterServiceTest {
 
     private CharacterRepository characterRepository = mock(CharacterRepository.class);
     private RickAndMortyAPIService rickAndMortyAPIService = mock(RickAndMortyAPIService.class);
+
     private CharacterService characterService = new CharacterService(characterRepository, rickAndMortyAPIService);
 
     @Test

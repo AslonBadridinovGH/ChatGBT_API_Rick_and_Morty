@@ -1,6 +1,6 @@
 package de.neuefische.cgnjava234webclient.characters.exception;
-
 import java.util.NoSuchElementException;
+
 
 public class CharacterNotFoundException extends NoSuchElementException {
 
@@ -8,3 +8,5 @@ public class CharacterNotFoundException extends NoSuchElementException {
         super(message);
     }
 }
+
+

@@ -1,4 +1,4 @@
-package de.neuefische.cgnjava234webclient.characters.services.api;
+package de.neuefische.cgnjava234webclient.characters.api;
 
 import de.neuefische.cgnjava234webclient.characters.exception.CharacterNotFoundException;
 import de.neuefische.cgnjava234webclient.characters.models.Character;
@@ -17,6 +17,7 @@ import java.util.Optional;
 public class RickAndMortyAPIService {
 
     private final RestClient restClient;
+
 
     public RickAndMortyAPIService(@Value("${app.rickandmorty.api.url}") String url) {
         restClient = RestClient.builder()
