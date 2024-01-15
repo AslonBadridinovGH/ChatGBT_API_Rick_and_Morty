@@ -14,13 +14,13 @@ import java.util.List;
 public class ChatGPTService {
 
     private final RestClient restClient;
-
-    public ChatGPTService(@Value("${app.chatgpt.api.url}") String url,
-                          @Value("${app.chatgpt.api.key}") String apiKey,
-                          @Value("${app.chatgpt.api.org}") String org) {
+  // @Value("${app.chatgpt.api.url}") String url,
+    public ChatGPTService(
+                           @Value("${app.chatgpt.api.key}") String apiKey,
+                           @Value("${app.chatgpt.api.org}") String org) {
 
         restClient = RestClient.builder()
-                .baseUrl(url)
+                .baseUrl("https://api.openai.com/v1/chat")
                 .defaultHeader("Authorization", "Bearer " + apiKey)
                 .defaultHeader("OpenAI-Organization", org)
                 .build();

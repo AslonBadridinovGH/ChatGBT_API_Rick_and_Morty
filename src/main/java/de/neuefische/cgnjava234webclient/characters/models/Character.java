@@ -5,6 +5,7 @@ import de.neuefische.cgnjava234webclient.characters.models.api.RickAndMortyOrigi
 import java.util.List;
 
 public record Character(
+
         String id,
         String name,
         String status,

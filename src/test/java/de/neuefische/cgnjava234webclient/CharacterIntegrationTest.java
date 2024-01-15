@@ -72,7 +72,7 @@ class CharacterIntegrationTest {
                         "results": [
                                  {
                                     "id": 1,
-                                    "name": "TEst",
+                                    "name": "Test",
                                     "status": "Alive",
                                     "species": "Human",
                                     "type": "",
@@ -89,7 +89,7 @@ class CharacterIntegrationTest {
                                     "episode": [
                                         "https://rickandmortyapi.com/api/episode/1",
                                         "https://rickandmortyapi.com/api/episode/2",
-                                        "https://rickandmortyapi.com/api/episode/3"       
+                                        "https://rickandmortyapi.com/api/episode/3"     
                                     ],
                                     "url": "https://rickandmortyapi.com/api/character/1",
                                     "created": "2017-11-04T18:48:46.250Z"
@@ -108,10 +108,9 @@ class CharacterIntegrationTest {
                         "id": "123",
                         "name": "Test"
                         },
-                        {"id":"1","name":"TEst","status":"Alive","origin":{"name":"Earth (C-137)","url":"https://rickandmortyapi.com/api/location/1"},"episode":["https://rickandmortyapi.com/api/episode/1","https://rickandmortyapi.com/api/episode/2","https://rickandmortyapi.com/api/episode/3"]}]
+                        {"id":"1","name":"Test","status":"Alive","origin":{"name":"Earth (C-137)","url":"https://rickandmortyapi.com/api/location/1"},"episode":["https://rickandmortyapi.com/api/episode/1","https://rickandmortyapi.com/api/episode/2","https://rickandmortyapi.com/api/episode/3"]}]
                         """))
                 .andReturn();
-
 
         assertEquals(mvcResult.getResponse().getStatus(), 200);
     }
@@ -126,7 +125,7 @@ class CharacterIntegrationTest {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content("""
                                 {
-                                   "name": "Florian"
+                                   "name": "myName"
                                 }
                                 """))
 
@@ -134,7 +133,7 @@ class CharacterIntegrationTest {
                 .andExpect(status().isOk())
                 .andExpect(content().json("""
                         {
-                            "name": "Florian"
+                            "name": "myName"
                         }
                         """))
                 .andExpect(jsonPath("$.id").isNotEmpty())
