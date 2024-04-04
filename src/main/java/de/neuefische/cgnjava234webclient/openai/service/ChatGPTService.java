@@ -14,8 +14,8 @@ import java.util.List;
 public class ChatGPTService {
 
     private final RestClient restClient;
-  // @Value("${app.chatgpt.api.url}") String url,
-    public ChatGPTService(
+
+    public ChatGPTService(   /* @Value("${app.chatgpt.api.url}") String url,*/
                            @Value("${app.chatgpt.api.key}") String apiKey,
                            @Value("${app.chatgpt.api.org}") String org) {
 
