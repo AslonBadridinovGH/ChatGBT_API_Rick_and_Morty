@@ -12,5 +12,4 @@ public record Character(
         RickAndMortyOrigin origin,
         List<String> episode
 
-) {
-}
+){}

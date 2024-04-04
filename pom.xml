@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>de.neuefische</groupId>
-    <artifactId>cgn-java-23-4-webclient</artifactId>
+    <artifactId>ChatGBT_API</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>cgn-java-23-4-webclient</name>
     <description>cgn-java-23-4-webclient</description>
