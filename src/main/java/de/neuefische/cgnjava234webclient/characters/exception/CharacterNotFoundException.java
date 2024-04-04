@@ -7,6 +7,7 @@ public class CharacterNotFoundException extends NoSuchElementException {
     public CharacterNotFoundException(String message) {
         super(message);
     }
+
 }
 
 

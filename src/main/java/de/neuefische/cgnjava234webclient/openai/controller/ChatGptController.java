@@ -18,4 +18,5 @@ public class ChatGptController {
     public String chat(@RequestBody String message) {
         return chatGPTService.chatGpt(message);
     }
+
 }

@@ -16,7 +16,6 @@ public class RickAndMortyAPIService {
 
     private final RestClient restClient;
 
-
     public RickAndMortyAPIService(@Value("${app.rickandmorty.api.url}") String url) {
         restClient = RestClient.builder()
                 .baseUrl(url)
@@ -28,7 +27,6 @@ public class RickAndMortyAPIService {
                 .uri("/character")
                 .retrieve()
                 .body(RickAndMortyResponse.class);
-
         return responseBody.results();
     }
 
@@ -42,6 +40,8 @@ public class RickAndMortyAPIService {
         catch (HttpClientErrorException exception) {
             throw new CharacterNotFoundException(exception.getMessage());
         }
-
     }
+
+
+
 }

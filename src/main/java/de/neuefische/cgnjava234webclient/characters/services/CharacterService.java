@@ -28,11 +28,13 @@ public class CharacterService {
     }
 
     public Character addCharacter(Character character) {
-
         return characterRepository.save(character);
     }
 
     public Character getCharacterById(String id) {
-        return rickAndMortyAPIService.loadCharacterById(id);
+        Character character = rickAndMortyAPIService.loadCharacterById(id);
+        characterRepository.save(character);
+        return character;
     }
+
 }

@@ -14,6 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CharacterController {
 
+
     private final CharacterService characterService;
 
 
@@ -38,4 +39,6 @@ public class CharacterController {
     public ErrorMessage handleException(RuntimeException exception) {
         return new ErrorMessage(exception.getMessage());
     }
+
+
 }

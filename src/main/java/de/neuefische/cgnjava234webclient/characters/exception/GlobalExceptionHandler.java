@@ -19,4 +19,5 @@ public class GlobalExceptionHandler {
     public ErrorMessage handleException(Exception exception) {
         return new ErrorMessage(exception.getMessage());
     }
+
 }

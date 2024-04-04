@@ -26,7 +26,6 @@ public class ChatGPTService {
                 .build();
     }
 
-
     public String chatGpt(String message) {
 
         ChatGptRequest requestBody = new ChatGptRequest(List.of(new ChatGptMessage("user", message)), "gpt-3.5-turbo");
@@ -40,4 +39,5 @@ public class ChatGPTService {
 
         return response.choices().get(0).message().content();
     }
+
 }
